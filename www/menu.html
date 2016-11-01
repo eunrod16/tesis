@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="onsenui/css/onsenui.css"/>
+    <link rel="stylesheet" href="onsenui/css/onsen-css-components.css"/>
+    <script src="onsenui/js/onsenui.js"></script>
+  </head>
+
+  <script>
+  document.addEventListener('init', function(event) {
+    var page = event.target;
+    if (page.matches('#helloworld-page')) {
+      page.querySelector('ons-toolbar .center').innerHTML = 'My app';
+      page.querySelector('ons-button').onclick = function() {
+        ons.notification.alert('Hello world!');
+      };
+    }
+  });
+  </script>
+  <body>
+    <div class="navigation-bar navigation-bar--material">
+      <div class="navigation-bar__center navigation-bar--material__center">
+        Aprendiendo con Quetzalito
+      </div>
+    </div>
+
+
+  <ul class="list">
+  <li class="list__item">
+    <div class="list__item__left">
+      <img class="list__item__thumbnail" src="http://placekitten.com/g/40/40" alt="Cute kitten">
+    </div>
+
+    <div class="list__item__center">
+      <div class="list__item__title">Ropa</div>
+    </div>
+  </li>
+
+  <li class="list__item">
+    <div class="list__item__left">
+      <img class="list__item__thumbnail" src="http://placekitten.com/g/40/40" alt="Cute kitten">
+    </div>
+
+    <div class="list__item__center">
+      <div class="list__item__title">Personas</div>
+    </div>
+  </li>
+</ul>
+
+  </body>
+
+</html>
